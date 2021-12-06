@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<div id="header">
+		<div>
+			<img class="logo" src="imagenes/logofinal.png" alt="Logo de web">
+		</div>
+		
+		<ul class="navBar">
+				<li><a href="index.html">Inicio</a></li>
+		    	<li><a href="servicios.html">Servicios</a></li>
+		    	<li><a href="clientes.html">Clientes</a></li>
+		    	<li><a href="nosotros.html">Nosotros</a></li>
+		    	<li class="active"><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</div>
+	</div>
+
+	
+	<div class="imagenMapa"> 
+		<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.066324895263!2d-58.534817149475394!3d-34.50120278039034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb08aa0cd1277%3A0x19e30064b59dd32d!2sC%C3%B3rdoba%202841%2C%20B1640GWE%20Mart%C3%ADnez%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1636038415210!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		<!--no me toma las imagenes de los diferentes mapas 
+		<img class="mapa" srcset="/imagenes/mapadesktop.png 810w, imagenes/mapamobile.png 1920w" src="imagenes/mapadesktop.png" alt="mapa">
+		<picture>
+			<source srcset="imagenes/mapamobile.png" media="(max-width: 768px)">
+			<img src="imagenes/mapadesktop.png" alt="mapa">
+		</picture>-->
+	</div>
+		
+	
+	<div class="contenedorForm">
+		<form class="contenedorFormEdit" action="" method="POST" enctype="multipart/form-data">
+			<div class="formCompletar">
+				<input type="text" name="nombre" placeholder="Nombre" required="">
+				<input type="text" name="apellido" placeholder="Apellido" required="">
+				<input type="email" name="email" placeholder="Email" required="">
+			</div>
+			<br><!-- SOLO POR HOY, esto NUNCAAAAAA VA ACA!!!! -->
+			<div>
+				<label for="fletes">Fletes</label>
+				<input type="checkbox" name="fletes" value="1" id="fletes">
+
+				<label for="mudanzas">Mudanzas</label>
+				<input type="checkbox" name="mudanzas" value="2" id="mudanzas">
+				
+				<label for="izajes">Izajes</label>
+				<input type="checkbox" name="izajes" value="1" id="izajes">
+				
+				<label for="armado de muebles">Armado de muebles</label>
+				<input type="checkbox" name="armado de muebles" value="1" id="armado de muebles">
+				
+				<label for="logistica de eventos">Logística de eventos</label>
+				<input type="checkbox" name="logistica de eventos" value="1" id="logistica de eventos">
+				
+				<label for="servicio de deposito">Servicio de depósito</label>
+				<input type="checkbox" name="servicio de deposito" value="1" id="servicio de deposito">
+			</div>
+			<br><!-- SOLO POR HOY, esto NUNCAAAAAA VA ACA!!!! -->
+			<div>
+				<select name="zona">
+					<option value="CBA" selected>CBA</option>
+					<option value="GBA">GBA</option>
+					<option value="INT">INTERIOR</option>
+				</select>
+			</div>
+			<br><!-- SOLO POR HOY, esto NUNCAAAAAA VA ACA!!!! -->
+			<div>
+				<input type="text" name="consulta" placeholder="Dejanos tu consulta">
+			</div>
+
+			<div>
+				<label for="terminos">Acepto los términos</label>
+				<input type="checkbox" name="terminos" value="1" id="terminos" checked>
+			</div>
+			<br><!-- SOLO POR HOY, esto NUNCAAAAAA VA ACA!!!! -->
+			<div>
+				<input class="bottom" type="submit" name="enviar" value="Enviar">
+			</div>
+		</form>
+	</div>
+
+		
+	<!-- 
+	Aca abajo es el footer
+	-->
+	<div class="footer">
+		<div>
+			<ul>
+			    <li><a href="https://www.facebook.com/transportegucar" target="_blank"><img class="logoRedes" src="imagenes/logofacebook.png" alt="logofacebook"></a></li>
+			    <li><a href="https://www.instagram.com/transgucar/" target="_blank"><img class="logoRedes" src="imagenes/logoinstagram.png" alt="logoinstagram"></a></li>
+			    <li><a href="https://wa.link/aggkaw/" target="_blank"><img class="logoRedes" src="imagenes/logowhatsapp.png" alt="logowhatsapp"></a></li>
+			</ul>
+		</div>
+		
+		<div class="copyright">
+			<p class="contenedorCopy">© 2021 Todos los derechos reservados</p>	
+		</div>
+	</div>
+	
+</body>
+</html>
