@@ -63,6 +63,17 @@ body{
 
 
 /* aca empieza servicios*/ 
+
+#bannerServicios{
+  background-image: url('../imagenes/fletesbanner.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 400px;
+  height: 50vh;
+  position: relative;
+}
+
+/*
 .contenidoServicios{
   margin: 30px 0;
   display: flex;
@@ -101,7 +112,7 @@ body{
 
 
 /*media queries servicios*/
-@media all and (min-width: 768px) {
+/*@media all and (min-width: 768px) {
   .contenidoServicio{
     margin-top: 150px;
     display: flex;
@@ -120,97 +131,46 @@ body{
     margin: 0 5%;
     box-sizing: border-box;
   }
-}
+} */
 
 
 /*aca empieza clientes*/
-.clientesTitulo{
-	/*width: 10%;
-    left: 5%;*/
-    font-size: 20px;
-    margin-top: 20px;
-    margin-left: 10%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
+
+#bannerClientes{
+  background-image: url('../imagenes/bannerclientes.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 400px;
+  height: 50vh;
+  position: relative;
 }
 
-.galeria {
-  display: flex;
-  justify-content: center;
-  /*margin: 3% 150px;*/
-  margin-top: 300px;
-
-}
-
-.padre {
-  width: 50%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
-  grid-template-areas:
-    "hijo1 hijo2"
-    "hijo3 hijo4";
-}
-
-.padre img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border: 2px solid;
-  margin-top: 50px;
+.transicionClientes img{
   transition: all 200ms ease-in-out;
 }
 
-.padre img:hover{
+.transicionClientes img:hover{
     transform: scale(1.1);
 }
 
-/*media queries clientes*/
-@media all and (min-width: 768px) {
-.clientesTitulo{
-	width: 10%;
-    top: 10%;
-    left: 5%;
-    font-size: 40px;
-    margin-top: 60px;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-}
-
-.galeria {
-  display: flex;
-  justify-content: center;
-  margin: 3% 0;
-}
-
-.padre {
-  width: 50%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  grid-template-areas:
-    "hijo1 hijo2"
-    "hijo3 hijo4";
-}
-
-.padre img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border: 2px solid;
-  margin-top: 120px;
-  margin-left: 200px;
-}
-
-}
-
-
 /* aca empieza nosotros*/
+
+.containerNosotros{
+  width: 100px;
+  box-sizing: border-box;
+}
+
+.containerNosotros img {
+  width: 500px;
+  height: 500px;
+  margin-top: 100px;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+
+/*
 .nosotrosTitulo{
-	/*width: 10%;
-    left: 5%;*/
     font-size: 20px;
     margin-top: 20px;
     margin-left: 10%;
@@ -220,7 +180,6 @@ body{
 }
 
 .contenidoNosotros {
-  /*margin: 30px 0;*/
   margin-top: 300px;
   display: flex;
   flex-direction: column;
@@ -233,8 +192,6 @@ body{
   height: 200px;
   margin-top: 100px;
   margin-left: 20px;
-  /*width: 80%;
-  height: 80%;*/
   transition: all 200ms ease-in-out;
   padding: 20px;
 }
@@ -248,9 +205,9 @@ body{
   padding: 5px;
   margin-top: 0 5%;
   box-sizing: border-box;
-}
+}*/
 
-/*media queries nosotros*/
+/*media queries nosotros
 @media all and (min-width: 768px) {
 .nosotrosTitulo{
 	width: 10%;
@@ -282,7 +239,7 @@ body{
     box-sizing: border-box;
 }
 
-}
+}*/
 
 
 
