@@ -3,24 +3,58 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Clientes</title>
+	<title>Inicio</title>
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-	<div id="header">
-		<div>
-			<img class="logo" src="imagenes/logofinal.png" alt="Logo de web">
-		</div>
-		
-		<ul class="navBar">
-				<li><a href="index.html">Inicio</a></li>
-		    	<li><a href="servicios.html">Servicios</a></li>
-		    	<li class="active"><a href="clientes.html">Clientes</a></li>
-		    	<li><a href="nosotros.html">Nosotros</a></li>
-		    	<li><a href="contacto.html">Contacto</a></li>
-			</ul>
-		</div>
-	</div>
+	<div class="container-fluid bg-light px-0 sticky-top">
+        <div class="container-xl px-0">
+          <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+            <div class="container-fluid">
+            	<a class="navbar-brand" href="#">
+			    	<img src="imagenes/logofinal.png" alt="" width="100" class="d-inline-block align-text-top">
+				</a>
+			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			    </button>
+			    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	      			<ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">SERVICIOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="clientes.html">CLIENTES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">CONTACTO</a>
+                  </li>
+                  <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown link
+                    </a>
+                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul> -->
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </div>
 
 	<div>
 		<p class="clientesTitulo">Nuestros clientes</p>
@@ -36,42 +70,27 @@
     </div>
 
 
-	<!-- <div class="padreClientes">
-		<div class="uno">
-			<p class="clientesTitulo">Nuestros clientes:</p>
-		</div>
-		<div class="contendorLogos">
-		    <div class="dos clientesLogos">
-		    	<img class="imagen" src="imagenes/clientes/mostazamuebles.jpg" alt="mostazamuebles">
-		    </div>
-		    <div class="tres clientesLogos">
-		    	<img class="imagen" src="imagenes/clientes/sofaduvete.jpg" alt="sofaduvete">
-		    </div>
-		    <div class="cuatro clientesLogos">
-		    	<img class="imagen" src="imagenes/clientes/goodies.png" alt="goodies">
-		    </div>
-		    <div class="cinco clientesLogos">
-		    	<img class="imagen" src="imagenes/clientes/loreal.jpg" alt="loreal">
-		    </div>
-		</div>
-	</div> -->
-	
-	<!-- 
-	Aca abajo es el footer
-	-->
-	<div class="footer">
-		<div>
-			<ul>
-			    <li><a href="https://www.facebook.com/transportegucar" target="_blank"><img class="logoRedes" src="imagenes/logofacebook.png" alt="logofacebook"></a></li>
-			    <li><a href="https://www.instagram.com/transgucar/" target="_blank"><img class="logoRedes" src="imagenes/logoinstagram.png" alt="logoinstagram"></a></li>
-			    <li><a href="https://wa.link/aggkaw/" target="_blank"><img class="logoRedes" src="imagenes/logowhatsapp.png" alt="logowhatsapp"></a></li>
-			</ul>
-		</div>
-		
-		<div class="copyright">
-			<p class="contenedorCopy">© 2021 Todos los derechos reservados</p>	
-		</div>
-	</div>
-	
+	<div class="container footer">
+    	<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    		<div class="col-md-4 d-flex align-items-center">
+    			<a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"></a>
+    			<span class="text-muted">© 2021 Transporte Gucar</span>
+    		</div>
+    		<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+    			<li class="ms-3"><a class="text-muted" href="https://www.facebook.com/transportegucar" target="_blank"><img width="30" src="imagenes/logofacebook.png" alt="logofacebook"></a> 
+    			</li>
+    			<li class="ms-3"><a class="text-muted" href="https://www.instagram.com/transgucar/" target="_blank"><img width="30" src="imagenes/logoinstagram.png" alt="logoinstagram"></a>
+      			</li>
+    			<li class="ms-3"><a class="text-muted" href="https://wa.link/aggkaw/" target="_blank"><img width="30" src="imagenes/logowhatsapp.png" alt="logowhatsapp"></a>
+    			</li>
+    		</ul>
+      	</footer>
+    </div>   
+
+ 	<script src = "js / wow.js"> </script>
+    <script>
+    nuevo WOW (). init ();
+ 	</script>
+ 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
