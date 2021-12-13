@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
-/**{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}*/
-
 body{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
@@ -14,13 +8,22 @@ body{
 .font-weight-light{
   font-weight: 300;
 }
+
 .font-weight-normal{
   font-weight: 400;
 }
+
 .font-weight-bold{
   font-weight: 700;
 }
 
+.navbar-nav .active{
+  color: #000;  
+}
+
+.navbar-nav .nav-item:visited{
+  color: #8e1705;
+}
 
 .myTitles{
   font-size: 2rem;
@@ -28,6 +31,8 @@ body{
 .mySubTitles{
   font-size: 1.5rem;
 }
+
+
 @media all and (min-width: 768px){
   .myTitles{
     font-size: 3rem;
@@ -52,6 +57,14 @@ body{
   box-sizing: border-box;
 }
 
+.transicionIconosInicio{
+  transition: all 200ms ease-in-out;
+}
+
+.transicionIconosInicio a:hover{
+  transition: scale(1.1);
+}
+
 #banner > .container{
   z-index: 1;
 }
@@ -61,9 +74,7 @@ body{
 }
 
 
-
 /* aca empieza servicios*/ 
-
 #bannerServicios{
   background-image: url('../imagenes/fletesbanner.png');
   background-repeat: no-repeat;
@@ -73,69 +84,8 @@ body{
   position: relative;
 }
 
-/*
-.contenidoServicios{
-  margin: 30px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 300px;
-}
-
-.contenidoServicios img {
-  width: 250px;
-  height: 250px;
-  transition: all 200ms ease-in-out;
-}
-
-.contenidoServicios img:hover{
-  transform: scale(1.1);
-}
-
-.contenidoServicios ul{
-  width: 80%;
-  padding: 5px;
-  margin: 5% 0;
-  box-sizing: border-box;
-  border: 2px solid #000;
-  text-decoration: none;
-}
-
-.contenidoServicios ul li{
-  text-decoration: none;
-  color: #000;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-
-
-/*media queries servicios*/
-/*@media all and (min-width: 768px) {
-  .contenidoServicio{
-    margin-top: 150px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-  .contenidoServicios img{
-    width: 50%;
-    height: auto;
-  }
-
-  .contenidoServicios ul{
-    width: 50%;
-    padding: 15px;
-    margin: 0 5%;
-    box-sizing: border-box;
-  }
-} */
-
 
 /*aca empieza clientes*/
-
 #bannerClientes{
   background-image: url('../imagenes/bannerclientes.png');
   background-repeat: no-repeat;
@@ -153,104 +103,87 @@ body{
     transform: scale(1.1);
 }
 
-/* aca empieza nosotros*/
-
-.containerNosotros{
-  width: 100px;
-  box-sizing: border-box;
+.textColor{
+  color: #8e1705;
 }
 
-.containerNosotros img {
-  width: 500px;
-  height: 500px;
-  margin-top: 100px;
-  margin-left: 20px;
-  padding: 20px;
-}
-
-
-/*
-.nosotrosTitulo{
-    font-size: 20px;
-    margin-top: 20px;
-    margin-left: 10%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-}
-
-.contenidoNosotros {
-  margin-top: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-
-}
-.contenidoNosotros img {
-  width: 200px;
-  height: 200px;
-  margin-top: 100px;
-  margin-left: 20px;
+.transicionTextoNosotros{
   transition: all 200ms ease-in-out;
-  padding: 20px;
 }
 
-.contenidoNosotros img:hover{
+.transicionTextoNosotros p:hover{
   transform: scale(1.1);
 }
 
-.contenidoNosotros p {
-  width: 70%;
-  padding: 5px;
-  margin-top: 0 5%;
-  box-sizing: border-box;
-}*/
-
-/*media queries nosotros
-@media all and (min-width: 768px) {
-.nosotrosTitulo{
-	width: 10%;
-    top: 10%;
-    left: 60%;
-    font-size: 40px;
-    margin-top: 100px;
-    position: absolute;
-    display: flex;
-    justify-content: center;
+@media all and (min-width: 768px){
+  .transicionClientes img{
+    width: 100%;
+  }  
 }
 
-.contenidoNosotros{
-    margin: 5rem 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+
+/* aca empieza nosotros*/
+.textoNosotros{
+  font-size: 0.8rem;
+  margin-top: 20px;
 }
 
-.contenidoNosotros img{
-    width: 50%;
-    height: auto;
+.tituloNosotros{
+  font-weight: 100;
+  font-size: 1.5rem;
+  color: #8e1705;
 }
 
-.contenidoNosotros p{
-    width: 50%;
-    padding: 15px;
-    margin: 0 5%;
-    box-sizing: border-box;
+.imagenNosotros{
+  border-radius: 50%;
+  transition: all 200ms ease-in-out;
 }
 
-}*/
+.imagenNosotros:hover{
+    transform: scale(1.1);
+}
 
+@media all and (min-width: 768px){
+  .textoNosotros{
+    font-size: 1.2rem;
+  }
+
+  .tituloNosotros{
+    font-size: 2rem;
+  }
+}
 
 
 /* aca empieza contacto*/
+.textColor{
+  color: #8e1705;
+}
+
+form .row{
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+input .form-check-input{
+  margin-right: 5px;
+}
+
+input .form-check-input:checked{
+  color: #fff;
+}
 
 #bannerMapa{
   background-image: url('../imagenes/mapabanner.png');
   background-repeat: no-repeat;
   background-position: center;
   min-height: 400px;
-  height: 50vh;
+  height: 30vh;
   position: relative;
 }
+
+/*@media all and (min-width 768px){
+  .img-fluid{
+    max-width: 100%;
+  }
+}*/
 

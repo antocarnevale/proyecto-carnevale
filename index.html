@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Inicio</title>
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<link
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body>
 	<div class="container-fluid bg-light px-0 sticky-top">
@@ -22,7 +22,7 @@
 			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			    </button>
-			    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+			    <div class="collapse navbar-collapse">
 	      			<ul class="navbar-nav">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
@@ -39,16 +39,6 @@
                   <li class="nav-item">
                     <a class="nav-link" href="contacto.html">CONTACTO</a>
                   </li>
-                  <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown link
-                    </a>
-                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul> -->
-                  </li>
                 </ul>
               </div>
             </div>
@@ -62,9 +52,7 @@
           <div class="col-lg-7 mx-auto text-center">
             <p class="myTitles font-weight-bold text-white mb-2">CONOCE NUESTROS SERVICIOS</p>
             <p class="mySubTitles text-white font-weight-light">de fletes y mudanzas</p>
-            <!-- aun no defini este boton, luego agregare el link si decido usarlo 
-            	<button type="button" class="btn btn-light btn-outline-danger">ver más</button> -->
-          </div>
+           </div>
         </div>
       </div>
     </div>       
@@ -72,31 +60,29 @@
     <div id="containerIconos" class="container-fluid px-4 py-lg-5">
     	<h2 class="pb-2 border-bottom"></h2>
     	<div class="row g-4 py-lg-5 row-cols-1 row-cols-lg-3 text-center">
-    		<div class="feature-col">
-    			<div class="feature-icon">
-    				<img class="icon" src="imagenes/iconmudanza.png" class="img-thumbnail" alt="icon mudanzas">
+    		<div class="feature-col transicionIcon">
+    			<div class="feature-icon transicionIconosInicio">
+    				<a href="servicios.html"><img class="icon" src="imagenes/iconmudanza.png" class="img-thumbnail" alt="icon mudanzas"></a>
      			</div>
     			<h2>Mudanzas</h2>
      			<p>aqui va un texto</p>
-    			<a href="servicios.html">ver más</a>
     		</div>
-    		<div class="feature-col">
-    			<div class="feature-icon">
-    				<img class="icon" src="imagenes/iconfletes.png" class="img-thumbnail" alt="icon fletes">
+    		<div class="feature-col transicionIcon">
+    			<div class="feature-icon transicionIconosInicio">
+    				<a href="servicios.html"><img class="icon" src="imagenes/iconfletes.png" class="img-thumbnail" alt="icon fletes"></a>
     			</div>
     			<h2>Fletes</h2>
     			<p>aqui va un texto</p>
-    			<a href="servicios.html">ver más</a>
     		</div>
     		<div class="feature-col">
     			<div class="feature-icon">
-    				<img class="icon" src="imagenes/iconizajes.png" class="img-thumbnail" alt="icon izajes">
+    				<a href="servicios.html"><img class="icon" src="imagenes/iconizajes.png" class="img-thumbnail" alt="icon izajes"></a>
     			</div>
     			<h2>Izajes</h2>
-    			<p>aqui va un texto</p>
-    			<a href="servicios.html">ver más</a>
-    		</div>
+    			<p>aqui va un texto   		</div>
     	</div>
+      <button class="btn btn-primary col-sm-3" type="submit"><a href="servicios.html"></a>Ver más servicios</button>
+      
     </div>
        
     <div class="container footer">
