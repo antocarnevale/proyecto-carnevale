@@ -6,11 +6,11 @@ body{
 }
 
 .font-weight-light{
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .font-weight-normal{
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .font-weight-bold{
@@ -26,35 +26,55 @@ body{
 }
 
 .myTitles{
+  font-size: 1.3rem;
+}
+
+.mySubTitles{
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.myTitlesBanner{
   font-size: 2rem;
 }
-.mySubTitles{
-  font-size: 1.5rem;
+
+.mySubTitlesBanner{
+  font-size: 1.4rem;
+  color: #fff;
 }
 
-
-@media all and (min-width: 768px){
-  .myTitles{
-    font-size: 3rem;
-  }
-  .mySubTitles{
-    font-size: 2rem;
-  }
+.titlesIcon{
+  font-size: 1.3rem;
 }
 
-#banner{
-  background-image: url('../imagenes/caminobanner.jpg');
+.textIcon{
+  font-size: 0.8rem; 
+}
+
+.bannerPrincipal{
+  background-image: url('../imagenes/fletesbanner.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 400px;
-  height: 50vh;
+  background-size: cover;
+  height: 100vh;
   position: relative;
+  background-attachment: fixed;
 }
 
-#containerIconos .icon{
+.containerIconos{
+  width: 100%;
+}
+
+.containerIconos .icon{
   width: 100px;
   border-radius: 1%;
   box-sizing: border-box;
+}
+
+.containerIconos .imagenMudanza{
+   border: 1px solid #ccc;
+  display: block;
+  width: 100%;
 }
 
 .transicionIconosInicio{
@@ -65,23 +85,150 @@ body{
   transition: scale(1.1);
 }
 
-#banner > .container{
+.bannerPrincipal .container{
   z-index: 1;
 }
 
-#banner p, #containerIconos p{
+.bannerPrincipal p, .containerIconos p{
   margin-bottom: 0;
+}
+
+.imagenMudanza{
+  width: 200px;
+}
+
+.containerPresupuesto{
+  background-color: #f2f6f8
+}
+
+.botonPresupuesto{
+  color:#000;
+  padding-top:3px;
+  padding-bottom:3px;
+  padding-left:5px;
+  padding-right:5px;
+  border-style: solid;
+}
+
+.botonPresupuesto:hover{
+  background-color:#000;
+  color: #fff;
+}
+
+.mySubTitles2{
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+
+@media all and (min-width: 768px){
+  .myTitles{
+    font-size: 2rem;
+  }
+  
+  .mySubTitles{
+    font-size: 1rem;
+  }
+
+  .mySubTitles2{
+    font-size: 1rem;
+  }
+  
+  .myTitlesBanner{
+    font-size: 3.4rem;
+    top: 48%;
+    left: 42%;
+    position: absolute;
+    margin-left: -150px;
+    margin-top: -25px;
+  }
+  
+  .mySubTitlesBanner{
+    font-size: 2.3rem;
+    top: 56%;
+    left: 46%;
+    position: absolute;
+    margin-left: -150px;
+    margin-top: -25px;
+  }
+
+  .containerIconos .icon{
+    width: 100px;
+  }
+
+  .imagenMudanza{
+    width: 350px;
+  }
+
+  .botonPresupuesto{
+    font-weight: 400;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:40px;
+    padding-right:40px;
+  }
+
+  .titlesIcon{
+    font-size: 1.7rem;
+  }
+
+  .textIcon{
+    font-size: 1.1rem; 
+  }
+
+  .containerQuienes p{
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 0px;
+  }
+
+  .containerQuehacemos{
+    margin-left: 350px;
+    margin-right: 350px;
+    padding: 0px;   
+  }
+}
+
+
+/*footer*/ /*aclaracion: como hago para que los iconos no se note el negro en contraste con el fondo, porq el color negro de la barra no es puro y se nota*/
+.containerFooter .bg-dark{
+  background-color: black;
+}
+
+/*no me toma el color blanco en el copyright*/
+.textoCopyright{
+  color: #fff;
 }
 
 
 /* aca empieza servicios*/ 
-#bannerServicios{
-  background-image: url('../imagenes/fletesbanner.png');
+.bannerServicios{
+  background-image: url('../imagenes/fletesbanner.jpg');
   background-repeat: no-repeat;
   background-position: center;
   min-height: 400px;
-  height: 50vh;
+  height: 100vh;
   position: relative;
+  background-attachment: fixed;  
+}
+
+.transicionServicios img{
+  transition: all 200ms ease-in-out;
+}
+
+.transicionServicios img:hover{
+    transform: scale(1.1);
+}
+
+.textColor{
+  color: #8e1705;
+}
+
+
+@media all and (min-width: 768px){
+  .transicionClientes img{
+    width: 100%;
+  }  
 }
 
 
@@ -114,6 +261,7 @@ body{
 .transicionTextoNosotros p:hover{
   transform: scale(1.1);
 }
+
 
 @media all and (min-width: 768px){
   .transicionClientes img{
@@ -155,6 +303,32 @@ body{
 
 
 /* aca empieza contacto*/
+.containerContacto{  
+  max-width: 750px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+  max-width: 405px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #8e1705; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
 .textColor{
   color: #8e1705;
 }
@@ -181,9 +355,10 @@ input .form-check-input:checked{
   position: relative;
 }
 
-/*@media all and (min-width 768px){
+@media all and (min-width 768px){
   .img-fluid{
     max-width: 100%;
   }
-}*/
+
+}
 
