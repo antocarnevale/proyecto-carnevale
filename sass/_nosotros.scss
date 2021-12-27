@@ -1,0 +1,41 @@
+.font-weight-light{
+  font-weight: 400;
+}
+
+.font-weight-normal{
+  font-weight: 500;
+}
+
+.font-weight-bold{
+  font-weight: 700;
+}
+
+.textoNosotros{
+  font-size: 0.8rem;
+  margin-top: 20px;
+}
+
+.tituloNosotros{
+  font-weight: 100;
+  font-size: 1.5rem;
+  color: $tituloColor;
+}
+
+.imagenNosotros{
+  border-radius: 50%;
+  transition: all 200ms ease-in-out;
+}
+
+.imagenNosotros:hover{
+    transform: scale(1.1);
+}
+
+@media all and (min-width: 768px){
+  .textoNosotros{
+    font-size: 1.2rem;
+  }
+
+  .tituloNosotros{
+    font-size: 2rem;
+  }
+}

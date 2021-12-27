@@ -1,140 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
-
-body{
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-}
-
-.font-weight-light{
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+body {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 
-.font-weight-normal{
+.font-weight-light {
+  font-weight: 400;
+}
+
+.font-weight-normal {
   font-weight: 500;
 }
 
-.font-weight-bold{
+.font-weight-bold {
   font-weight: 700;
 }
 
-.navbar-nav .active{
-  color: #000;  
+.navbar-nav .active {
+  color: #000;
 }
 
-.navbar-nav .nav-item:visited{
-  color: #8e1705;
-}
-
-.myTitles{
+.myTitles {
   font-size: 1.3rem;
 }
 
-.mySubTitles{
-  font-size: 0.7rem;
+@media all and (min-width: 768px) {
+  .myTitles {
+    font-size: 1.6rem;
+  }
+}
+
+.mySubTitles {
   font-weight: bold;
 }
 
-.myTitlesBanner{
-  font-size: 2rem;
+.mySubTitles {
+  font-size: 0.7rem;
 }
 
-.mySubTitlesBanner{
-  font-size: 1.4rem;
-  color: #fff;
+@media all and (min-width: 768px) {
+  .mySubTitles {
+    font-size: 1rem;
+  }
 }
 
-.titlesIcon{
-  font-size: 1.3rem;
-}
-
-.textIcon{
-  font-size: 0.8rem; 
-}
-
-.bannerPrincipal{
-  background-image: url('../imagenes/fletesbanner.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  position: relative;
-  background-attachment: fixed;
-}
-
-.containerIconos{
-  width: 100%;
-}
-
-.containerIconos .icon{
-  width: 100px;
-  border-radius: 1%;
-  box-sizing: border-box;
-}
-
-.containerIconos .imagenMudanza{
-   border: 1px solid #ccc;
-  display: block;
-  width: 100%;
-}
-
-.transicionIconosInicio{
-  transition: all 200ms ease-in-out;
-}
-
-.transicionIconosInicio a:hover{
-  transition: scale(1.1);
-}
-
-.bannerPrincipal .container{
-  z-index: 1;
-}
-
-.bannerPrincipal p, .containerIconos p{
-  margin-bottom: 0;
-}
-
-.imagenMudanza{
-  width: 200px;
-}
-
-.containerPresupuesto{
-  background-color: #f2f6f8
-}
-
-.botonPresupuesto{
-  color:#000;
-  padding-top:3px;
-  padding-bottom:3px;
-  padding-left:5px;
-  padding-right:5px;
-  border-style: solid;
-}
-
-.botonPresupuesto:hover{
-  background-color:#000;
-  color: #fff;
-}
-
-.mySubTitles2{
+.mySubTitles2 {
   font-size: 0.9rem;
   font-weight: bold;
 }
 
-
-@media all and (min-width: 768px){
-  .myTitles{
-    font-size: 2rem;
-  }
-  
-  .mySubTitles{
+@media all and (min-width: 768px) {
+  .mySubTitles2 {
     font-size: 1rem;
   }
+}
 
-  .mySubTitles2{
-    font-size: 1rem;
-  }
-  
-  .myTitlesBanner{
+.myTitlesBanner {
+  font-size: 2rem;
+}
+
+@media all and (min-width: 768px) {
+  .myTitlesBanner {
     font-size: 3.4rem;
     top: 48%;
     left: 42%;
@@ -142,8 +68,15 @@ body{
     margin-left: -150px;
     margin-top: -25px;
   }
-  
-  .mySubTitlesBanner{
+}
+
+.mySubTitlesBanner {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+@media all and (min-width: 768px) {
+  .mySubTitlesBanner {
     font-size: 2.3rem;
     top: 56%;
     left: 46%;
@@ -151,90 +84,216 @@ body{
     margin-left: -150px;
     margin-top: -25px;
   }
+}
 
-  .containerIconos .icon{
-    width: 100px;
-  }
+.titlesIcon {
+  font-size: 1.3rem;
+}
 
-  .imagenMudanza{
-    width: 350px;
-  }
-
-  .botonPresupuesto{
-    font-weight: 400;
-    padding-top:15px;
-    padding-bottom:15px;
-    padding-left:40px;
-    padding-right:40px;
-  }
-
-  .titlesIcon{
+@media all and (min-width: 768px) {
+  .titlesIcon {
     font-size: 1.7rem;
   }
+}
 
-  .textIcon{
-    font-size: 1.1rem; 
+.textIcon {
+  font-size: 1.2rem;
+}
+
+@media all and (min-width: 768px) {
+  .textIcon {
+    font-size: 1.3rem;
   }
+}
 
-  .containerQuienes p{
+.textColor {
+  color: #000;
+}
+
+.bannerPrincipal {
+  background-image: url("../imagenes/fletesbanner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.bannerPrincipal .container {
+  z-index: 1;
+}
+
+.bannerPrincipal p {
+  margin-bottom: 0;
+}
+
+.containerIconos {
+  width: 100%;
+}
+
+@media all and (min-width: 768px) {
+  .containerIconos .icon {
+    width: 100px;
+    padding: 5px;
+  }
+}
+
+.containerIconos .imagenMudanza {
+  border: 1px solid #ccc;
+  display: block;
+  width: 100%;
+  width: 200px;
+}
+
+@media all and (min-width: 768px) {
+  .containerIconos .imagenMudanza {
+    width: 400px;
+  }
+}
+
+.imagenMudanza {
+  border: 1px solid #ccc;
+  display: block;
+  width: 100%;
+  width: 200px;
+}
+
+@media all and (min-width: 768px) {
+  .imagenMudanza {
+    width: 350px;
+  }
+}
+
+.transicionIconosInicio {
+  transition: all 200ms ease-in-out;
+}
+
+.transicionIconosInicio a:hover {
+  transition: scale(1.1);
+}
+
+.containerCarrousel {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.containerCarrousel .carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.containerPresupuesto {
+  background-color: #f2f6f8;
+}
+
+.botonPresupuesto {
+  color: #000;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-style: solid;
+}
+
+@media all and (min-width: 768px) {
+  .botonPresupuesto {
+    font-weight: 400;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.botonPresupuesto:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.containerQuienes {
+  background-color: #f2f6f8;
+}
+
+@media all and (min-width: 768px) {
+  .containerQuienes p {
     margin-left: 200px;
     margin-right: 200px;
     padding: 0px;
   }
+}
 
-  .containerQuehacemos{
+@media all and (min-width: 768px) {
+  .containerQuehacemos {
     margin-left: 350px;
     margin-right: 350px;
-    padding: 0px;   
+    padding: 0px;
   }
 }
 
-
-/*footer*/ /*aclaracion: como hago para que los iconos no se note el negro en contraste con el fondo, porq el color negro de la barra no es puro y se nota*/
-.containerFooter .bg-dark{
-  background-color: black;
+.containerFooter.bg-dark {
+  background-color: #000;
 }
 
-/*no me toma el color blanco en el copyright*/
-.textoCopyright{
-  color: #fff;
+.font-weight-light {
+  font-weight: 400;
 }
 
+.font-weight-normal {
+  font-weight: 500;
+}
 
-/* aca empieza servicios*/ 
-.bannerServicios{
-  background-image: url('../imagenes/fletesbanner.jpg');
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.bannerServicios {
+  background-image: url("../imagenes/fletesbanner.jpg");
   background-repeat: no-repeat;
   background-position: center;
   min-height: 400px;
   height: 100vh;
   position: relative;
-  background-attachment: fixed;  
+  background-attachment: fixed;
 }
 
-.transicionServicios img{
+.transicionServicios img {
   transition: all 200ms ease-in-out;
 }
 
-.transicionServicios img:hover{
-    transform: scale(1.1);
+.transicionServicios img:hover {
+  transform: scale(1.1);
 }
 
-.textColor{
-  color: #8e1705;
+.textColor {
+  color: #000;
 }
 
-
-@media all and (min-width: 768px){
-  .transicionClientes img{
+@media all and (min-width: 768px) {
+  .transicionClientes img {
     width: 100%;
-  }  
+  }
 }
 
+.font-weight-light {
+  font-weight: 400;
+}
 
-/*aca empieza clientes*/
-#bannerClientes{
-  background-image: url('../imagenes/bannerclientes.png');
+.font-weight-normal {
+  font-weight: 500;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.bannerClientes {
+  background-image: url("../imagenes/bannerclientes.png");
   background-repeat: no-repeat;
   background-position: center;
   min-height: 400px;
@@ -242,112 +301,129 @@ body{
   position: relative;
 }
 
-.transicionClientes img{
+.transicionClientes img {
   transition: all 200ms ease-in-out;
 }
 
-.transicionClientes img:hover{
-    transform: scale(1.1);
-}
-
-.textColor{
-  color: #8e1705;
-}
-
-.transicionTextoNosotros{
-  transition: all 200ms ease-in-out;
-}
-
-.transicionTextoNosotros p:hover{
+.transicionClientes img:hover {
   transform: scale(1.1);
 }
 
-
-@media all and (min-width: 768px){
-  .transicionClientes img{
-    width: 100%;
-  }  
+.textColor {
+  color: #000;
 }
 
+.transicionTextoNosotros {
+  transition: all 200ms ease-in-out;
+}
 
-/* aca empieza nosotros*/
-.textoNosotros{
+.transicionTextoNosotros p:hover {
+  transform: scale(1.1);
+}
+
+@media all and (min-width: 768px) {
+  .transicionClientes img {
+    width: 100%;
+  }
+}
+
+.font-weight-light {
+  font-weight: 400;
+}
+
+.font-weight-normal {
+  font-weight: 500;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.textoNosotros {
   font-size: 0.8rem;
   margin-top: 20px;
 }
 
-.tituloNosotros{
+.tituloNosotros {
   font-weight: 100;
   font-size: 1.5rem;
-  color: #8e1705;
+  color: #000;
 }
 
-.imagenNosotros{
+.imagenNosotros {
   border-radius: 50%;
   transition: all 200ms ease-in-out;
 }
 
-.imagenNosotros:hover{
-    transform: scale(1.1);
+.imagenNosotros:hover {
+  transform: scale(1.1);
 }
 
-@media all and (min-width: 768px){
-  .textoNosotros{
+@media all and (min-width: 768px) {
+  .textoNosotros {
     font-size: 1.2rem;
   }
-
-  .tituloNosotros{
+  .tituloNosotros {
     font-size: 2rem;
   }
 }
 
+.font-weight-light {
+  font-weight: 400;
+}
 
-/* aca empieza contacto*/
-.containerContacto{  
-  max-width: 750px; 
+.font-weight-normal {
+  font-weight: 500;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.containerContacto {
+  max-width: 750px;
   height: auto;
   margin: 80px auto;
-  border-radius: 10px;  
+  border-radius: 10px;
   padding-top: 30px;
-  padding-bottom: 20px;  
-  background-color: #fbfbfb; 
-  padding-left: 30px; 
+  padding-bottom: 20px;
+  background-color: #fbfbfb;
+  padding-left: 30px;
 }
 
-
-textarea{
-  background-color: #fbfbfb; 
-  max-width: 405px; 
-  height: 150px; 
-  border-radius: 5px;  
-  border-style: solid; 
-  border-width: 1px; 
-  border-color: #8e1705; 
-  margin-top: 10px;  
+textarea {
+  background-color: #fbfbfb;
+  max-width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #8e1705;
+  margin-top: 10px;
   padding-left: 10px;
-  margin-bottom: 20px; 
-  padding-top: 15px; 
+  margin-bottom: 20px;
+  padding-top: 15px;
 }
 
-.textColor{
-  color: #8e1705;
+.textColor {
+  color: #000;
 }
 
-form .row{
+form .row {
   padding-right: 5px;
   padding-left: 5px;
 }
 
-input .form-check-input{
+input .form-check-input {
   margin-right: 5px;
 }
 
-input .form-check-input:checked{
+input .form-check-input:checked {
   color: #fff;
 }
 
-#bannerMapa{
-  background-image: url('../imagenes/mapabanner.png');
+#bannerMapa {
+  background-image: url("../imagenes/mapabanner.png");
   background-repeat: no-repeat;
   background-position: center;
   min-height: 400px;
@@ -355,10 +431,8 @@ input .form-check-input:checked{
   position: relative;
 }
 
-@media all and (min-width 768px){
-  .img-fluid{
+@media all and (min-width: 768px) {
+  .img-fluid {
     max-width: 100%;
   }
-
 }
-

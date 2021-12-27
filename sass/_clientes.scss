@@ -1,0 +1,47 @@
+.font-weight-light{
+  font-weight: 400;
+}
+
+.font-weight-normal{
+  font-weight: 500;
+}
+
+.font-weight-bold{
+  font-weight: 700;
+}
+
+.bannerClientes{
+  background-image: url('../imagenes/bannerclientes.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 400px;
+  height: 50vh;
+  position: relative;
+}
+
+.transicionClientes img{
+  transition: all 200ms ease-in-out;
+}
+
+.transicionClientes img:hover{
+    transform: scale(1.1);
+}
+
+.textColor{
+  color: $tituloColor;
+}
+
+.transicionTextoNosotros{
+  transition: all 200ms ease-in-out;
+}
+
+.transicionTextoNosotros p:hover{
+  transform: scale(1.1);
+}
+
+
+@media all and (min-width: 768px){
+  .transicionClientes img{
+    width: 100%;
+  }  
+}

@@ -1,0 +1,214 @@
+@import "variables";
+@import "tools";
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+.font-weight-light{
+  font-weight: map-get($miMapa, light);
+}
+
+.font-weight-normal{
+  font-weight: 500;
+}
+
+
+.font-weight-bold{
+  font-weight: 700;
+}
+
+.navbar-nav{
+  .active{
+    color: $textoColor;
+  }
+}
+
+.myTitles{
+  font-size: 1.3rem;
+  @media all and (min-width: $point-md){
+    font-size: 1.6rem;
+  }
+}
+
+%fontBold{
+  font-weight: bold;
+}
+
+.mySubTitles{
+  font-size: 0.7rem;
+  @extend %fontBold;
+  @media all and (min-width: $point-md){
+    font-size: 1rem;
+  }
+}
+
+.mySubTitles2{
+  font-size: 0.9rem;
+  font-weight: bold;
+  @media all and (min-width: $point-md){
+    font-size: 1rem;
+  }
+}
+
+.myTitlesBanner{
+  font-size: 2rem;
+  @media all and (min-width: $point-md){
+    font-size: 3.4rem;
+    top: 48%;
+    left: 42%;
+    position: absolute;
+    margin-left: -150px;
+    margin-top: -25px;
+  }
+}
+
+.mySubTitlesBanner{
+  font-size: 1.4rem;
+  color: #fff;
+  @media all and (min-width: $point-md){
+    font-size: 2.3rem;
+    top: 56%;
+    left: 46%;
+    position: absolute;
+    margin-left: -150px;
+    margin-top: -25px;
+  }
+}
+
+.titlesIcon{
+  font-size: 1.3rem;
+  @media all and (min-width: $point-md){
+    font-size: 1.7rem;
+  }
+}
+
+.textIcon{
+  font-size: 1.2rem; 
+  @media all and (min-width: $point-md){
+    font-size: 1.3rem; 
+  }
+}
+
+.textColor {
+  color: #000;
+}
+
+.bannerPrincipal{
+  background-image: url('../imagenes/fletesbanner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include sizesBg(100%, 100vh);
+  position: relative;
+  background-attachment: fixed;
+  .container{
+    z-index: 1;
+  }
+  p{
+    margin-bottom: 0;
+  }
+}
+
+.containerIconos{
+  width: 100%;
+  .icon{
+    @media all and (min-width: $point-md){
+    width: 100px;
+    padding: 5px;
+    }
+  }
+  .imagenMudanza{
+  border: 1px solid #ccc;
+  display: block;
+  width: 100%;
+  width: 200px;  
+    @media all and (min-width: $point-md){
+    width: 400px;
+    }
+  }
+}
+
+.imagenMudanza{
+  border: 1px solid #ccc;
+  display: block;
+  width: 100%;
+  width: 200px;  
+  @media all and (min-width: $point-md){
+    width: 350px;
+  }
+}
+
+.transicionIconosInicio{
+  transition: all 200ms ease-in-out;
+  a{
+    &:hover{
+      transition: scale(1.1);
+    }
+  }
+}
+
+.containerCarrousel{
+  width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  .carousel-inner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.containerPresupuesto{
+  background-color: #f2f6f8
+}
+
+.botonPresupuesto{
+  color:$textoColor;
+  padding-top:3px;
+  padding-bottom:3px;
+  padding-left:5px;
+  padding-right:5px;
+  border-style: solid;
+  @media all and (min-width: $point-md){
+    font-weight: 400;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:40px;
+    padding-right:40px;
+  }
+  &:hover{
+    background-color: $textoColor;
+    color: #fff;
+  }
+}
+
+.containerQuienes{
+  background-color: #f2f6f8;
+  p{
+  @media all and (min-width: $point-md){
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 0px;
+  }  
+}
+}
+
+
+
+.containerQuehacemos{
+  @media all and (min-width: $point-md){
+    margin-left: 350px;
+    margin-right: 350px;
+    padding: 0px;   
+  }
+}
+
+.containerFooter{
+  &.bg-dark{
+    background-color: #000;
+  }
+}
