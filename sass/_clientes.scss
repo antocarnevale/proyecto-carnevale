@@ -1,3 +1,11 @@
+@import "variables";
+@import "tools";
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
 .font-weight-light{
   font-weight: 400;
 }
@@ -19,12 +27,16 @@
   position: relative;
 }
 
-.transicionClientes img{
-  transition: all 200ms ease-in-out;
-}
-
-.transicionClientes img:hover{
+.transicionClientes{
+  img{
+    transition: all 200ms ease-in-out;  
+  }
+  @media all and (min-width: 768px){
+    width: 100;
+  }  
+  &:hover{
     transform: scale(1.1);
+  }
 }
 
 .textColor{
@@ -32,16 +44,10 @@
 }
 
 .transicionTextoNosotros{
-  transition: all 200ms ease-in-out;
-}
-
-.transicionTextoNosotros p:hover{
-  transform: scale(1.1);
-}
-
-
-@media all and (min-width: 768px){
-  .transicionClientes img{
-    width: 100%;
-  }  
+  p{
+    transition: all 200ms ease-in-out;  
+  }
+  &:hover{
+    transform: scale(1.1);  
+  }
 }

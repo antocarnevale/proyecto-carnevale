@@ -1,3 +1,11 @@
+@import "variables";
+@import "tools";
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
 .font-weight-light{
   font-weight: 400;
 }
@@ -14,27 +22,64 @@
   background-image: url('../imagenes/fletesbanner.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 400px;
+  background-size: cover;
+  width: 100%;
   height: 100vh;
   position: relative;
   background-attachment: fixed;  
 }
 
-.transicionServicios img{
-  transition: all 200ms ease-in-out;
-}
-
-.transicionServicios img:hover{
+.transicionServicios{
+  img{
+    transition: all 200ms ease-in-out;
+  }
+  &:hover{
     transform: scale(1.1);
+  }
 }
 
 .textColor{
   color: $tituloColor;
 }
 
+.transicionClientes{
+  img{
+    @media all and (min-width: 768px){
+      width: 100%;
+    }
+  }
+}
 
-@media all and (min-width: 768px){
-  .transicionClientes img{
-    width: 100%;
-  }  
+.containerServicios{
+  margin-left: 10px;
+  @media all and (min-width: $point-md){
+  padding: 0px;   
+  }
+  p{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  img{
+    @media all and (min-width: $point-md){
+    margin-left: 100px;
+    padding: 0px;   
+    }
+  }
+}
+
+.containerFotos{
+  margin-left: 10px;
+  @media all and (min-width: $point-md){
+  padding: 0px; 
+  margin-left: 0px;  
+  }
+  p{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  img{
+    @media all and (min-width: $point-md){
+    padding: 0px;   
+    }
+  }
 }

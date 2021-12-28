@@ -1,3 +1,11 @@
+@import "variables";
+@import "tools";
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
 .font-weight-light{
   font-weight: 400;
 }
@@ -40,27 +48,23 @@ textarea{
   color: $tituloColor;
 }
 
-form .row{
-  padding-right: 5px;
-  padding-left: 5px;
+form{
+  .row{
+    padding-right: 5px;
+    padding-left: 5px;  
+  }
+
 }
 
-input .form-check-input{
-  margin-right: 5px;
+input{
+  .form-check-input{
+    margin-right: 5px;
+  }
+  &:checked{
+    color: #fff;
+  }  
 }
 
-input .form-check-input:checked{
-  color: #fff;
-}
-
-#bannerMapa{
-  background-image: url('../imagenes/mapabanner.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 400px;
-  height: 30vh;
-  position: relative;
-}
 
 @media all and (min-width: 768px){
   .img-fluid{
