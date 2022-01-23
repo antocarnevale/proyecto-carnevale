@@ -3,18 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="Mejoramos cualquier presupuesto. Nos adaptamos a las necesidades de cada cliente. Pedinos tu presupuesto sin cargo.">
-  <meta name="keywords" content="TRANSPORTE, FLETES, MUDANZAS, CONTACTO, PRESUPUESTO, CONSULTAS">
+  <meta name="description" content="Somos una empresa de transporte y fletes. Realizamos mudanzas y todo tipo de logistica para tu empresa.">
+  <meta name="keywords" content="TRANSPORTE, FLETES, MUDANZAS, LOGISTICA, DEPOSITO">
   <title>Contacto</title>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body>
-	<div class="container-fluid bg-light px-0 sticky-top">
+  <div class="container-fluid bg-light px-0 sticky-top">
     <div class="container-xl px-0">
       <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container-fluid">
@@ -25,8 +22,8 @@
 			    <span class="navbar-toggler-icon"></span>
 			    </button>
 			    
-          <div class="collapse navbar-collapse">
-	      		<ul class="navbar-nav">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	      		<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
               </li>
@@ -49,102 +46,16 @@
     </div>
   </div>
 
-  <div class="bannerServicios d-flex align-items-center animate__animated animate__fadeInLeft">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7 mx-auto text-center">
-          <p class="myTitlesBanner font-weight-bold text-white mb-2">CONTACTANOS</p>
-        </div>
-      </div>
-    </div>
-  </div> 
+	<div class="bannerPrincipal d-flex align-items-center animate__animated animate__fadeInLeft">
+		<div class="container">
+    		<div class="row">
+        		<div class="col-lg-7 mx-auto text-center">
+          			<h1 class="myTitlesBanner font-weight-bold text-white mb-2">CONTACTANOS</h1>
+        		</div>
+      		</div>
+    	</div>
+  	</div> 
 
-	
-<!--
-  <div class="contact_form col-12 col-lg-12">
-
-    <div class="formulario">      
-      <h1>Contactanos</h1>
-        <h3>Pedinos tu presupuesto y en breve los pondremos en contacto contigo!</h3>
-
-
-          <form action="submeter-formulario.php" method="post">       
-
-            
-                <p>
-                  <label for="nombre" class="colocar_nombre">Nombre y apellido
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre y apellido">
-                </p>
-              
-                <p>
-                  <label for="email" class="colocar_email">Email
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-                </p>
-            
-                <p>
-                  <label for="telefone" class="colocar_telefono">Teléfono
-                  </label>
-                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                </p>    
-              
-                <div class="row">
-				<div class="d-flex flex-wrap">
-					<div class="form-check">
-					  <input class="form-check-input" type="checkbox" value="" id="fletes">
-					  <label class="form-check-label" for="Fletes">Fletes</label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input" type="checkbox" value="" id="Mudanzas">
-						<label class="form-check-label" for="Mudanzas">Mudanzas</label>
-					</div>
-					<div class="form-check">
-					 	<input class="form-check-input" type="checkbox" value="" id="Izajes">
-					 	<label class="form-check-label" for="Izajes">Izajes</label>
-					</div>
-					<div class="form-check">
-					  <input class="form-check-input" type="checkbox" value="" id="Armado de muebles">
-					  <label class="form-check-label" for="Armado de muebles">Armado de muebles</label>
-					</div>
-					<div class="form-check">
-					  <input class="form-check-input" type="checkbox" value="" id="Logística de eventos">
-					  <label class="form-check-label" for="Logística de eventos">Logística de eventos</label>
-					</div>
-					<div class="form-check">
-					  <input class="form-check-input" type="checkbox" value="" id="Servicio de deposito">
-					  <label class="form-check-label" for="Servicio de deposito">Servicio de depósito</label>
-					</div>
-
-			  	<select class="form-select" aria-label="Default select example">
-		  			<option selected>Selecciona tu zona</option>
-		  			<option value="1">CABA</option>
-		  			<option value="2">GBA</option>
-		  			<option value="3">INTERIOR</option>
-					</select>   
-              
-                <p>
-                  <label for="mensaje" class="colocar_mensaje">Mensaje
-                    <span class="obligatorio">*</span>
-                  </label>                     
-                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                                </p>                    
-              
-                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
-
-                <p class="aviso">
-                  <span class="obligatorio"> * </span>los campos son obligatorios.
-                </p>          
-            
-          </form>
-    </div>  
-  </div>
-
--->
-
-<!-- como hago para que el ancho del footer no me quede del ancho del container del form, no esta en el mismo div pero me lo sigue poniendo asi-->
 	<div class="containerContacto container-fluid px-4 py-lg-5 row d-flex flex-wrap col-12 col-lg-12">
 		<div class="col-12 text-center text-lg-left">
 			<div class="mt-8 mb-4">
@@ -152,101 +63,93 @@
 			</div>
 		</div>
 				
-	<div class="col-12 col-lg-12">
-		<p>Pedinos tu presupuesto o consulta y en breve nos pondremos en contacto contigo!</p>
-		<form>
-		  <div class="row mb-3">
-				<div class="form-row col-12 col-sm-6">
-					<label class="form-label">Nombre</label>
-					<input type="text" class="form-control" aria-describedby="nombre" tabindex="1">
+		<div class="col-12 col-lg-12">
+			<p>Pedinos tu presupuesto o consulta y en breve nos pondremos en contacto contigo!</p>
+			<form>
+				<div class="row mb-3">
+					<div class="form-row col-12 col-sm-6">
+						<label class="form-label">Nombre</label>
+						<input type="text" class="form-control" aria-describedby="nombre" tabindex="1">
+					</div>
+					<div class="form-row col-12 col-sm-6">
+						<label class="form-label">Apellido</label>
+						<input type="text" class="form-control" aria-describedby="apellido" tabindex="2">
+					</div>
+					<div class="form-group col-12 col-sm-10"> 
+						<label class="form-label">Email</label>
+						<input type="email" class="form-control" aria-describedby="email" tabindex="3">
+					</div>
 				</div>
-				<div class="form-row col-12 col-sm-6">
-					<label class="form-label">Apellido</label>
-					<input type="text" class="form-control" aria-describedby="apellido" tabindex="2">
-				</div>
-				<div class="form-group col-12 col-sm-10"> 
-					<label class="form-label">Email</label>
-					<input type="email" class="form-control" aria-describedby="email" tabindex="3">
-				</div>
+
+				<div class="row mb-3">
+					<div class="d-flex flex-wrap col-sm-10">
+						<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="fletes">
+						<label class="form-check-label" for="Fletes">Fletes</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="Mudanzas">
+							<label class="form-check-label" for="Mudanzas">Mudanzas</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="Izajes">
+							<label class="form-check-label" for="Izajes">Izajes</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="Armado de muebles">
+							<label class="form-check-label" for="Armado de muebles">Armado de muebles</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="Logística de eventos">
+							<label class="form-check-label" for="Logística de eventos">Logística de eventos</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="Servicio de deposito">
+							<label class="form-check-label" for="Servicio de deposito">Servicio de depósito</label>
+						</div>
+
+						<select class="form-select" aria-label="Default select example">
+							<option selected>Selecciona tu zona</option>
+							<option value="1">CABA</option>
+							<option value="2">GBA</option>
+							<option value="3">INTERIOR</option>
+							</select>
+							
+						<div class="formulario form-row">
+							<label class="form-label">Escribe tu consulta aquí</label>
+							<textarea class="form-control" row="3" tabindex="4"></textarea>
+							<a class="botonPresupuesto text-decoration-none fs-5 bg-transparente border-dark border-3 rounded-pill fw-bold btn btn-sm" href="contacto.html">Enviar</a>
+						</div>
+					</div>				  	
+				</div>	
+			</form>
+		</div>
+	</div>	
+
+	<div class="containerFooter container-fluid bg-dark">
+		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+		  <div class="col-md-4 d-flex align-items-center">
+			  <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"></a>
+				<span class="textoCopyright text-muted">© 2021 Transporte Gucar</span>
 			</div>
-
-			<div class="row mb-3">
-				<div class="d-flex flex-wrap col-sm-10">
-					<div class="form-check">
-					  <input class="form-check-input" type="checkbox" value="" id="fletes">
-					  <label class="form-check-label" for="Fletes">Fletes</label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input" type="checkbox" value="" id="Mudanzas">
-						<label class="form-check-label" for="Mudanzas">Mudanzas</label>
-					</div>
-					<div class="form-check">
-					 	<input class="form-check-input" type="checkbox" value="" id="Izajes">
-					 	<label class="form-check-label" for="Izajes">Izajes</label>
-					</div>
-					<div class="form-check">
-					  <input class="form-check-input" type="checkbox" value="" id="Armado de muebles">
-					  <label class="form-check-label" for="Armado de muebles">Armado de muebles</label>
-					</div>
-					<div class="form-check">
-					  <input class="form-check-input" type="checkbox" value="" id="Logística de eventos">
-					  <label class="form-check-label" for="Logística de eventos">Logística de eventos</label>
-					</div>
-					<div class="form-check">
-					  <input class="form-check-input" type="checkbox" value="" id="Servicio de deposito">
-					  <label class="form-check-label" for="Servicio de deposito">Servicio de depósito</label>
-					</div>
-
-			  	<select class="form-select" aria-label="Default select example">
-		  			<option selected>Selecciona tu zona</option>
-		  			<option value="1">CABA</option>
-		  			<option value="2">GBA</option>
-		  			<option value="3">INTERIOR</option>
-					</select>
-		  			
-			  	<div class="formulario form-row">
-			  		<label class="form-label">Escribe tu consulta aquí</label>
-			  		<textarea class="form-control" row="3" tabindex="4"></textarea>
-			  		<a class="botonPresupuesto text-decoration-none fs-5 bg-transparente border-dark border-3 rounded-pill fw-bold btn btn-sm" href="contacto.html">Enviar</a>
-					</div>
-				</div>			  	
-			</div>	
-		</form>
-
-	<div id="bannerMapa" class="d-flex align-items-center animate__animated animate__fadeInLeft">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7 mx-auto text-center">
-          </div>
-        </div>
-      </div>
-    </div>       
-
-
-  <div class="containerFooter container-fluid bg-dark">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    	<div class="col-md-4 d-flex align-items-center">
-    		<a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"></a>
-    		<span class="textoCopyright text-muted">© 2021 Transporte Gucar</span>
-    	</div>
-    	<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-    		<li class="ms-3">
-          <a class="text-muted" href="https://www.facebook.com/transportegucar" target="_blank"><img width="40" src="imagenes/logos/logofbnegro.png" alt="logofacebook"></a> 
-    		</li>
-    		<li class="ms-3">
-          <a class="text-muted" href="https://www.instagram.com/transgucar/" target="_blank"><img width="40" src="imagenes/logos/logoignegro.png" alt="logoinstagram"></a>
-      	</li>
-    		<li class="ms-3">
-          <a class="text-muted" href="https://wa.link/aggkaw/" target="_blank"><img width="40" src="imagenes/logos/logowsappnegro.png" alt="logowhatsapp"></a>
-    		</li>
-    	</ul>
-    </footer>
-  </div>   
-
- 	<script src = "js / wow.js"> </script>
-    <script>
-    nuevo WOW (). init ();
- 	</script>
- 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
-</html>
+			<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+				<li class="ms-3">
+			  <a class="text-muted" href="https://www.facebook.com/transportegucar" target="_blank"><img width="40" src="imagenes/logos/facebook.png" alt="logofacebook"></a> 
+				</li>
+				<li class="ms-3">
+			  <a class="text-muted" href="https://www.instagram.com/transgucar/" target="_blank"><img width="40" src="imagenes/logos/instagram.png" alt="logoinstagram"></a>
+			  </li>
+				<li class="ms-3">
+			  <a class="text-muted" href="https://wa.link/aggkaw/" target="_blank"><img width="40" src="imagenes/logos/whatsapp.png" alt="logowhatsapp"></a>
+				</li>
+			</ul>
+		</footer>
+	  </div>   
+	
+		 <script src = "js / wow.js"> </script>
+		<script>
+		new WOW (). init ();
+		 </script>
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	</body>
+	</html>
