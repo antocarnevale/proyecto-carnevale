@@ -16,6 +16,10 @@ body {
   font-weight: 700;
 }
 
+.navbar-nav {
+  background-color: #fff;
+}
+
 .navbar-nav .active {
   color: #000;
 }
@@ -238,8 +242,9 @@ body {
   }
 }
 
-.containerFooter.bg-dark {
+.containerFooter {
   background-color: #000;
+  color: #fff;
 }
 
 .font-weight-light {
@@ -368,6 +373,11 @@ body {
   }
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
 .font-weight-light {
   font-weight: 400;
 }
@@ -420,20 +430,5 @@ input .form-check-input {
 
 input .form-check-input:checked {
   color: #fff;
-}
-
-#bannerMapa {
-  background-image: url("../imagenes/mapabanner.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 400px;
-  height: 30vh;
-  position: relative;
-}
-
-@media all and (min-width: 768px) {
-  .img-fluid {
-    max-width: 100%;
-  }
 }
 /*# sourceMappingURL=estilos.css.map */

@@ -20,6 +20,7 @@ body{
 }
 
 .navbar-nav{
+  background-color: #fff;
   .active{
     color: $textoColor;
   }
@@ -208,7 +209,6 @@ body{
 }
 
 .containerFooter{
-  &.bg-dark{
-    background-color: #000;
-  }
+  background-color: #000;
+  color: #fff
 }
