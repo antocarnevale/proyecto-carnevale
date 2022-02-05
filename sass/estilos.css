@@ -279,6 +279,16 @@ body {
   }
 }
 
+.textIconServicios {
+  font-size: 1rem;
+}
+
+@media all and (min-width: 768px) {
+  .textIconServicios {
+    font-size: 1.3rem;
+  }
+}
+
 .font-weight-light {
   font-weight: 400;
 }

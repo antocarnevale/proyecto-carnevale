@@ -28,3 +28,10 @@
     width: 100%;
   }  
 }
+
+.textIconServicios{
+  font-size: 1rem; 
+  @media all and (min-width: $point-md){
+    font-size: 1.3rem; 
+  }
+}
